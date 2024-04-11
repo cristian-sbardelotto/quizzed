@@ -7,7 +7,7 @@ export function Start() {
         Hello, quizzer! Are you ready?
       </h2>
 
-      <p className='text-stone-500'>
+      <p>
         Welcome to <span className='text-gray-100'>Quizzed</span>! Test your
         knowledge about <span className='text-gray-300'>something</span> with
         this ten-questions-quiz!
