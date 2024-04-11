@@ -1,7 +1,7 @@
 export function App() {
   return (
     <main>
-      <h1>Quizzed!</h1>
+      <h1 className='text-4xl'>Quizzed!</h1>
     </main>
   );
 }
