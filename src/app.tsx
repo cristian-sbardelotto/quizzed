@@ -1,7 +1,9 @@
+import { Header } from './components/header';
+
 export function App() {
   return (
     <main>
-      <h1 className='text-4xl'>Quizzed!</h1>
+      <Header />
     </main>
   );
 }
