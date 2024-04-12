@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import { ArrowRight } from 'lucide-react';
 
 export function Start() {
@@ -13,13 +15,15 @@ export function Start() {
         this ten-questions-quiz!
       </p>
 
-      <button className='group mt-12 py-1 px-3 flex items-center justify-center gap-1.5 rounded-md text-gray-300 border border-gray-300 bg-transparent transition-colors cursor-pointer'>
-        Give a shot
-        <ArrowRight
-          size={16}
-          className='group-hover:translate-x-1 transition-all'
-        />
-      </button>
+      <Link to='/play'>
+        <button className='group mt-12 py-1 px-3 flex items-center justify-center gap-1.5 rounded-md text-gray-300 border border-gray-300 bg-transparent transition-colors cursor-pointer'>
+          Give a shot
+          <ArrowRight
+            size={16}
+            className='group-hover:translate-x-1 transition-all'
+          />
+        </button>
+      </Link>
     </div>
   );
 }
