@@ -1,15 +1,15 @@
-import { CheckIcon } from 'lucide-react';
 import { RootLayout } from '../layouts/root';
+import { Quiz } from '../components/quiz';
 
 export function Play() {
   return (
     <RootLayout>
-      <h2 className='px-4 max-w-[120ch] mt-4 text-center text-gray-100 text-2xl md:px-0'>
+      {/* <h2 className='px-4 max-w-[120ch] mt-4 text-center text-gray-100 text-2xl md:px-0'>
         3. When was something created?
       </h2>
 
       <ul className='max-w-[500px] md:w-[500px] mx-auto mt-8 flex flex-col items-center gap-5 px-4 md:px-0'>
-        <li className='w-full max- p-2 border-2 border-gray-600 rounded-lg shadow-card cursor-pointer hover:translate-x-[-2px] hover:translate-y-[-2px] hover:bg-slate-700/30 transition-all'>
+        <li className='w-full p-2 border-2 border-gray-600 rounded-lg shadow-card cursor-pointer hover:translate-x-[-2px] hover:translate-y-[-2px] hover:bg-slate-700/30 transition-all'>
           <button>
             a) <span className='text-gray-100'>1943</span>
           </button>
@@ -40,7 +40,23 @@ export function Play() {
           Question <span className='text-gray-100'>3</span> of{' '}
           <span className='text-gray-100'>10</span>
         </p>
-      </div>
+      </div> */}
+
+      <Quiz.Title currentQuestion={3}>When was something created?</Quiz.Title>
+
+      <Quiz.Options
+        options={[
+          { title: '1943', isCorrect: true },
+          { title: '1498', isCorrect: false },
+          { title: '1783', isCorrect: false },
+        ]}
+      />
+
+      <Quiz.Footer
+        correctAnswers={2}
+        currentQuestion={3}
+        questionsAmount={10}
+      />
     </RootLayout>
   );
 }
