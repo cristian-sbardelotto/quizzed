@@ -10,6 +10,12 @@ export function Play() {
 
   const currentQuestion = questions[questionIndex];
 
+  function incrementQuestionIndex() {
+    if (questions.length > questionIndex + 1) {
+      setQuestionIndex(questionIndex + 1);
+    }
+  }
+
   return (
     <RootLayout>
       <Quiz.Title currentQuestion={questionIndex + 1}>
@@ -17,7 +23,7 @@ export function Play() {
       </Quiz.Title>
 
       <Quiz.Options
-        handleClick={() => setQuestionIndex(questionIndex + 1)}
+        handleClick={incrementQuestionIndex}
         options={currentQuestion.options}
       />
 
