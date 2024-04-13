@@ -7,6 +7,7 @@ import { questions } from '../data/questions';
 
 export function Play() {
   const [questionIndex, setQuestionIndex] = useState(0);
+  const [totalCorrectAnswers, setTotalCorrectAnswers] = useState(0);
 
   const currentQuestion = questions[questionIndex];
 
@@ -25,10 +26,13 @@ export function Play() {
       <Quiz.Options
         handleClick={incrementQuestionIndex}
         options={currentQuestion.options}
+        handleCorrectAnswer={() =>
+          setTotalCorrectAnswers(totalCorrectAnswers + 1)
+        }
       />
 
       <Quiz.Footer
-        correctAnswers={0}
+        correctAnswers={totalCorrectAnswers}
         currentQuestion={questionIndex + 1}
         questionsAmount={questions.length}
       />

@@ -7,11 +7,16 @@ import { Option } from '../../types/quiz';
 type QuizOptionsProps = {
   options: Option[];
   handleClick: () => void;
+  handleCorrectAnswer: () => void;
 };
 
 const ONE_SECOND_IN_MILLISECONDS = 1000;
 
-export function QuizOptions({ options, handleClick }: QuizOptionsProps) {
+export function QuizOptions({
+  options,
+  handleClick,
+  handleCorrectAnswer,
+}: QuizOptionsProps) {
   const [isOptionSelected, setIsOptionSelected] = useState(false);
 
   function handleOptionClick(
@@ -20,6 +25,10 @@ export function QuizOptions({ options, handleClick }: QuizOptionsProps) {
   ) {
     if (!isCorrect) {
       event.currentTarget.classList.add('wrong-option');
+    }
+
+    if (isCorrect) {
+      handleCorrectAnswer();
     }
 
     setIsOptionSelected(true);
