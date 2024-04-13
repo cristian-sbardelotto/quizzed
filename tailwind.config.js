@@ -7,7 +7,9 @@ export default {
         background: '#161A24',
       },
       boxShadow: {
-        card: '3px 3px 0 #4b5563',
+        option: '3px 3px 0 #4b5563',
+        'correct-option': '3px 3px 0 #10b981',
+        'wrong-option': '3px 3px 0 #dc2626',
       },
       fontFamily: {
         sora: 'Sora, sans-serif',

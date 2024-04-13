@@ -11,3 +11,7 @@ body > div {
 .app-container {
   @apply max-w-[1280px] mx-auto;
 }
+
+.wrong-option {
+  @apply text-red-600;
+}

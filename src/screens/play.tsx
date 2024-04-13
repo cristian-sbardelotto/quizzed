@@ -6,7 +6,7 @@ import { Quiz } from '../components/quiz';
 import { questions } from '../data/questions';
 
 export function Play() {
-  const [questionIndex] = useState(0);
+  const [questionIndex, setQuestionIndex] = useState(0);
 
   const currentQuestion = questions[questionIndex];
 
@@ -16,7 +16,10 @@ export function Play() {
         {currentQuestion.title}
       </Quiz.Title>
 
-      <Quiz.Options options={currentQuestion.options} />
+      <Quiz.Options
+        handleClick={() => setQuestionIndex(questionIndex + 1)}
+        options={currentQuestion.options}
+      />
 
       <Quiz.Footer
         correctAnswers={0}
