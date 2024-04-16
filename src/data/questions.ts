@@ -130,7 +130,7 @@ export const questions: Question[] = [
       },
       {
         id: randomUUID(),
-        title: '1',
+        title: 'Fe',
         isCorrect: false,
       },
     ],
@@ -146,7 +146,7 @@ export const questions: Question[] = [
       },
       {
         id: randomUUID(),
-        title: '1',
+        title: 'Thomas Jefferson',
         isCorrect: false,
       },
       {
