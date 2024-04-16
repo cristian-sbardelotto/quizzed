@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import { RootLayout } from '../layouts/root';
+import { Results } from '../components/results';
 import { Quiz } from '../components/quiz';
 
 import { questions } from '../data/questions';
@@ -12,30 +13,39 @@ export function Play() {
   const currentQuestion = questions[questionIndex];
 
   function incrementQuestionIndex() {
-    if (questions.length > questionIndex + 1) {
-      setQuestionIndex(questionIndex + 1);
-    }
+    setQuestionIndex(questionIndex + 1);
   }
+
+  const isQuizRunning = questionIndex + 1 <= questions.length;
 
   return (
     <RootLayout>
-      <Quiz.Title currentQuestion={questionIndex + 1}>
-        {currentQuestion.title}
-      </Quiz.Title>
+      {isQuizRunning ? (
+        <>
+          <Quiz.Title currentQuestion={questionIndex + 1}>
+            {currentQuestion.title}
+          </Quiz.Title>
 
-      <Quiz.Options
-        handleClick={incrementQuestionIndex}
-        options={currentQuestion.options}
-        handleCorrectAnswer={() =>
-          setTotalCorrectAnswers(totalCorrectAnswers + 1)
-        }
-      />
+          <Quiz.Options
+            handleClick={incrementQuestionIndex}
+            options={currentQuestion.options}
+            handleCorrectAnswer={() =>
+              setTotalCorrectAnswers(totalCorrectAnswers + 1)
+            }
+          />
 
-      <Quiz.Footer
-        correctAnswers={totalCorrectAnswers}
-        currentQuestion={questionIndex + 1}
-        questionsAmount={questions.length}
-      />
+          <Quiz.Footer
+            correctAnswers={totalCorrectAnswers}
+            currentQuestion={questionIndex + 1}
+            questionsAmount={questions.length}
+          />
+        </>
+      ) : (
+        <Results
+          questionsAmount={questions.length}
+          correctAnswers={totalCorrectAnswers}
+        />
+      )}
     </RootLayout>
   );
 }
