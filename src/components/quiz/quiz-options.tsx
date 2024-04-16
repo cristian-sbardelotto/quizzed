@@ -73,10 +73,7 @@ export function QuizOptions({
                 />
               )
             ) : (
-              <CircleDashedIcon
-                size={20}
-                className=''
-              />
+              <CircleDashedIcon size={20} />
             )}
             {option.title}
           </button>
