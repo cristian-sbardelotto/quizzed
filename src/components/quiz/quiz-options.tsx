@@ -47,7 +47,7 @@ export function QuizOptions({
     <ul className='max-w-[500px] md:w-[500px] mx-auto mt-8 flex flex-col items-center gap-5 px-4 md:px-0'>
       {options.map(option => (
         <li
-          key={option.title}
+          key={option.id}
           className={twMerge(
             'border-2 border-gray-600 shadow-option w-full rounded-lg cursor-pointer hover:translate-x-[-2px] hover:translate-y-[-2px] hover:bg-slate-700/30 transition-all',
             isOptionSelected && 'pointer-events-none',

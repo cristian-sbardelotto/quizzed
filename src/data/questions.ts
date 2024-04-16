@@ -14,14 +14,17 @@ export const questions: Question[] = [
     title: 'What is the capital of France?',
     options: [
       {
+        id: randomUUID(),
         title: 'Berlin',
         isCorrect: false,
       },
       {
+        id: randomUUID(),
         title: 'London',
         isCorrect: false,
       },
       {
+        id: randomUUID(),
         title: 'Paris',
         isCorrect: true,
       },
@@ -32,14 +35,17 @@ export const questions: Question[] = [
     title: 'Who painted the Mona Lisa?',
     options: [
       {
+        id: randomUUID(),
         title: 'Leonardo da Vinci',
         isCorrect: true,
       },
       {
+        id: randomUUID(),
         title: 'Pablo Picasso',
         isCorrect: false,
       },
       {
+        id: randomUUID(),
         title: 'Vincent van Gogh',
         isCorrect: false,
       },
@@ -50,14 +56,17 @@ export const questions: Question[] = [
     title: 'What is the largest planet in the solar system?',
     options: [
       {
+        id: randomUUID(),
         title: 'Earth',
         isCorrect: false,
       },
       {
+        id: randomUUID(),
         title: 'Jupiter',
         isCorrect: true,
       },
       {
+        id: randomUUID(),
         title: 'Saturn',
         isCorrect: false,
       },
@@ -68,14 +77,17 @@ export const questions: Question[] = [
     title: 'What is the longest bone in the human body?',
     options: [
       {
+        id: randomUUID(),
         title: 'Femur',
         isCorrect: true,
       },
       {
+        id: randomUUID(),
         title: 'Tibia',
         isCorrect: false,
       },
       {
+        id: randomUUID(),
         title: 'Humerus',
         isCorrect: false,
       },
@@ -86,14 +98,17 @@ export const questions: Question[] = [
     title: "Who wrote 'Don Quixote'?",
     options: [
       {
+        id: randomUUID(),
         title: 'Friedrich Nietzsche',
         isCorrect: false,
       },
       {
+        id: randomUUID(),
         title: 'William Shakespeare',
         isCorrect: false,
       },
       {
+        id: randomUUID(),
         title: 'Miguel de Cervantes',
         isCorrect: true,
       },
@@ -104,15 +119,18 @@ export const questions: Question[] = [
     title: 'What is the chemical symbol for gold?',
     options: [
       {
+        id: randomUUID(),
         title: 'Ag',
         isCorrect: false,
       },
       {
+        id: randomUUID(),
         title: 'Au',
         isCorrect: true,
       },
       {
-        title: 'Fe',
+        id: randomUUID(),
+        title: '1',
         isCorrect: false,
       },
     ],
@@ -122,14 +140,17 @@ export const questions: Question[] = [
     title: 'Who was the first president of the United States?',
     options: [
       {
+        id: randomUUID(),
         title: 'George Washington',
         isCorrect: true,
       },
       {
-        title: 'Thomas Jefferson',
+        id: randomUUID(),
+        title: '1',
         isCorrect: false,
       },
       {
+        id: randomUUID(),
         title: 'Abraham Lincoln',
         isCorrect: false,
       },
@@ -140,14 +161,17 @@ export const questions: Question[] = [
     title: 'What is the largest ocean in the world?',
     options: [
       {
+        id: randomUUID(),
         title: 'Atlantic',
         isCorrect: false,
       },
       {
+        id: randomUUID(),
         title: 'Pacific',
         isCorrect: true,
       },
       {
+        id: randomUUID(),
         title: 'Indian',
         isCorrect: false,
       },
