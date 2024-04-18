@@ -4,12 +4,12 @@ import { ArrowRight } from 'lucide-react';
 
 export function Start() {
   return (
-    <div className='pt-4 flex flex-col items-center gap-3'>
-      <h2 className='text-4xl text-gray-100 font-extrabold'>
+    <div className='pt-4 flex flex-col items-center gap-3 px-3'>
+      <h2 className='text-center text-3xl md:text-4xl text-gray-100 font-extrabold'>
         Hello, quizzer! Are you ready?
       </h2>
 
-      <p>
+      <p className='text-center text-sm md:text-base'>
         Welcome to <span className='text-gray-100'>Quizzed</span>! Test your
         knowledge about <span className='text-gray-300'>something</span> with
         this ten-questions-quiz!
