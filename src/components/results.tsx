@@ -1,43 +1,19 @@
 import { Link } from 'react-router-dom';
-import { Card } from './card';
-import { CodeXmlIcon, HomeIcon } from 'lucide-react';
 
-type ResultsProps = {
-  correctAnswers: number;
-  questionsAmount: number;
-};
+import { Card } from './card';
+import { ResultsProps } from '../types/results';
+import { calculatePrecision, getPrecisionCategory } from '../utils/results';
+
+import { CodeXmlIcon, HomeIcon } from 'lucide-react';
 
 export function Results({ correctAnswers, questionsAmount }: ResultsProps) {
   const wrongAnswers = questionsAmount - correctAnswers;
 
-  function calculatePrecision({
-    correctAnswers,
-    questionsAmount,
-  }: ResultsProps) {
-    const precisionAverage = Math.round(
-      (correctAnswers / questionsAmount) * 100
-    );
-
-    if (precisionAverage === 0) {
-      return 'terrible';
-    }
-    if (precisionAverage === 100) {
-      return 'perfect';
-    }
-    if (precisionAverage <= 25) {
-      return 'bad';
-    }
-    if (precisionAverage > 25 && precisionAverage <= 75) {
-      return 'good';
-    }
-
-    return 'great';
-  }
-
-  const resultsMessage = calculatePrecision({
+  const precisionAverage = calculatePrecision({
     correctAnswers,
     questionsAmount,
   });
+  const resultsMessage = getPrecisionCategory(precisionAverage);
 
   const resultsMessagesDictionary = {
     terrible: (
