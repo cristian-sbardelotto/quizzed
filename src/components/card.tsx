@@ -32,15 +32,15 @@ export function Card({
   return (
     <div
       className={twMerge(
-        'flex flex-col items-center py-5 px-6 gap-3 rounded-2xl w-fit border-2 text-gray-100',
+        'flex flex-col items-center py-5 px-6 gap-3 rounded-2xl max-w-52 md:w-fit break-all border-2 text-gray-100',
         variantClasses
       )}
     >
-      <span className='text-2xl'>{icon}</span>
+      <span className='text-xl md:text-2xl'>{icon}</span>
 
-      <p className='font-bold text-xl'>{children}</p>
+      <p className='font-bold text-lg md:text-xl'>{children}</p>
 
-      <span className='text-lg'>{description}</span>
+      <span className='md:text-lg'>{description}</span>
     </div>
   );
 }
