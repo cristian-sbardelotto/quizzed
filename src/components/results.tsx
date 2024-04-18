@@ -41,22 +41,22 @@ export function Results({ correctAnswers, questionsAmount }: ResultsProps) {
         </Card>
       </section>
 
-      <div className='mt-12 flex flex-col gap-4 max-w-80 mx-auto'>
+      <div className='mt-16 flex flex-col gap-4 max-w-80 mx-auto'>
         <a
           href='https://linkedin.com/in/cristian-k-sbardelotto/'
           target='_blank'
-          className='py-2 px-5 border-2 bg-gray-400 border-transparent rounded-3xl  hover:brightness-[.8] transition-all'
+          className='py-2 px-5 border-2 bg-transparent border-gray-600 rounded-3xl hover:border-white transition-colors'
         >
-          <button className='w-full flex items-center justify-center gap-1.5 text-lg text-background'>
+          <button className='w-full flex items-center justify-center gap-1.5 text-lg text-white'>
             <CodeXmlIcon size={18} /> Meet the developer
           </button>
         </a>
 
         <Link
-          className='py-2 px-5 border-2 bg-gray-400 border-transparent rounded-3xl  hover:brightness-[.8] transition-all'
+          className='py-2 px-5 border-2 bg-transparent border-gray-600 rounded-3xl hover:border-white transition-colors'
           to='/'
         >
-          <button className='w-full flex items-center justify-center gap-1.5 text-lg text-background'>
+          <button className='w-full flex items-center justify-center gap-1.5 text-lg text-white'>
             <HomeIcon size={18} /> Go back to home
           </button>
         </Link>
