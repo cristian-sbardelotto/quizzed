@@ -5,8 +5,8 @@ export function Header() {
   return (
     <header className='py-8 px-4 flex items-center justify-between'>
       <Link to='/'>
-        <h1 className='text-2xl text-gray-200 font-bold md:text-3xl'>
-          ⚡ Quiz<span className='text-gray-500'>zed</span>
+        <h1 className='text-2xl text-gray-200 font-bold md:text-3xl hover:brightness-[.8] transition-[filter]'>
+          ⚡ Quiz<span className='text-gray-500'>zed</span>!
         </h1>
       </Link>
 
