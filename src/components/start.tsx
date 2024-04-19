@@ -20,7 +20,7 @@ export function Start() {
       </p>
 
       <Link to='/play'>
-        <button className='group mt-6 py-1 px-3 flex items-center justify-center gap-1.5 rounded-md text-gray-300 border border-gray-300 bg-transparent transition-colors cursor-pointer'>
+        <button className='group mt-6 py-1 px-3 flex items-center justify-center gap-1.5 rounded-md text-gray-300 border border-gray-300 bg-transparent hover:bg-gray-300 hover:text-background transition-all cursor-pointer'>
           Give a shot
           <ArrowRight
             size={16}
