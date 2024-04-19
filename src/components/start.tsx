@@ -29,7 +29,7 @@ export function Start() {
         </button>
       </Link>
 
-      <div className='mt-6 flex gap-10'>
+      <div className='mt-6 flex flex-wrap gap-10 justify-center'>
         <HomeCard image={cardImg1}>
           <h4 className='text-gray-100 font-bold md:text-lg'>Fast-paced</h4>
 
@@ -52,8 +52,7 @@ export function Start() {
           <h4 className='text-gray-100 font-bold md:text-lg'>Interactive</h4>
 
           <p className='text-sm md:text-base'>
-            Engage and learn effectively through this hands-on and uncomplicated
-            tests.
+            Engage effectively through this hands-on and uncomplicated tests.
           </p>
 
           <Link to='/play'>
