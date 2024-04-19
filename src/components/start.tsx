@@ -20,7 +20,7 @@ export function Start() {
       </p>
 
       <Link to='/play'>
-        <button className='group mt-12 py-1 px-3 flex items-center justify-center gap-1.5 rounded-md text-gray-300 border border-gray-300 bg-transparent transition-colors cursor-pointer'>
+        <button className='group mt-6 py-1 px-3 flex items-center justify-center gap-1.5 rounded-md text-gray-300 border border-gray-300 bg-transparent transition-colors cursor-pointer'>
           Give a shot
           <ArrowRight
             size={16}
@@ -29,7 +29,7 @@ export function Start() {
         </button>
       </Link>
 
-      <div className='mt-6 flex flex-wrap gap-10 justify-center'>
+      <div className='mt-8 flex flex-wrap gap-10 justify-center'>
         <HomeCard image={cardImg1}>
           <h4 className='text-gray-100 font-bold md:text-lg'>Fast-paced</h4>
 
