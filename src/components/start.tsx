@@ -1,5 +1,9 @@
 import { Link } from 'react-router-dom';
 
+import { HomeCard } from './home-card';
+
+import cardImg1 from '/home-card-1.jpeg';
+import cardImg2 from '/home-card-2.jpeg';
 import { ArrowRight } from 'lucide-react';
 
 export function Start() {
@@ -24,6 +28,45 @@ export function Start() {
           />
         </button>
       </Link>
+
+      <div className='mt-6 flex gap-10'>
+        <HomeCard image={cardImg1}>
+          <h4 className='text-gray-100 font-bold md:text-lg'>Fast-paced</h4>
+
+          <p className='pr-8 text-sm md:text-base'>
+            Instantly boost knowledge with fast and simple questions.
+          </p>
+
+          <Link to='/play'>
+            <button className='group flex items-center justify-center gap-1.5 text-gray-300 hover:underline'>
+              Play{' '}
+              <ArrowRight
+                size={16}
+                className='group-hover:translate-x-1 transition-all'
+              />
+            </button>
+          </Link>
+        </HomeCard>
+
+        <HomeCard image={cardImg2}>
+          <h4 className='text-gray-100 font-bold md:text-lg'>Interactive</h4>
+
+          <p className='text-sm md:text-base'>
+            Engage and learn effectively through this hands-on and uncomplicated
+            tests.
+          </p>
+
+          <Link to='/play'>
+            <button className='group flex items-center justify-center gap-1.5 text-gray-300 hover:underline'>
+              Play{' '}
+              <ArrowRight
+                size={16}
+                className='group-hover:translate-x-1 transition-all'
+              />
+            </button>
+          </Link>
+        </HomeCard>
+      </div>
     </div>
   );
 }
