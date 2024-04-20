@@ -8,7 +8,10 @@ import { ArrowRight } from 'lucide-react';
 
 export function Start() {
   return (
-    <div className='pt-4 flex flex-col items-center gap-3 px-3'>
+    <div
+      className='pt-4 flex flex-col items-center gap-3 px-3 opacity-0 animate-appear'
+      style={{ animationFillMode: 'forwards', animationDelay: '0.5s' }}
+    >
       <h2 className='text-center text-3xl md:text-4xl text-gray-100 font-extrabold'>
         Hello, quizzer! Are you ready?
       </h2>

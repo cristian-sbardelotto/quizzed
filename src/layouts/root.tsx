@@ -14,9 +14,7 @@ export function RootLayout({ children }: RootLayoutProps) {
 
       <main className='flex-1 mt-6'>{children}</main>
 
-      <div className=''>
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 }
