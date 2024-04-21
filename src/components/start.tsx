@@ -18,8 +18,8 @@ export function Start() {
 
       <p className='text-center text-sm md:text-base'>
         Welcome to <span className='text-gray-100'>Quizzed</span>! Test your
-        knowledge about <span className='text-gray-300'>something</span> with
-        this ten-questions-quiz!
+        knowledge and try our quiz to{' '}
+        <span className='text-gray-300'>challenge</span> yourself!
       </p>
 
       <Link to='/play'>
