@@ -21,7 +21,10 @@ export function Play() {
   return (
     <RootLayout>
       {isQuizRunning ? (
-        <>
+        <div
+          className='animate-appear opacity-0'
+          style={{ animationFillMode: 'forwards', animationDelay: '0.5s' }}
+        >
           <Quiz.Title currentQuestion={questionIndex + 1}>
             {currentQuestion.title}
           </Quiz.Title>
@@ -39,7 +42,7 @@ export function Play() {
             currentQuestion={questionIndex + 1}
             questionsAmount={questions.length}
           />
-        </>
+        </div>
       ) : (
         <Results
           questionsAmount={questions.length}

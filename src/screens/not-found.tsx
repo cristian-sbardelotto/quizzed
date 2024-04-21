@@ -5,7 +5,10 @@ import { RootLayout } from '../layouts/root';
 export function NotFound() {
   return (
     <RootLayout>
-      <div className='flex flex-col gap-2 items-center'>
+      <div
+        className='flex flex-col gap-2 items-center animate-appear opacity-0'
+        style={{ animationFillMode: 'forwards', animationDelay: '0.5s' }}
+      >
         <h2 className='text-center text-lg font-bold text-gray-100'>404</h2>
 
         <p className='text-center'>Page not found.</p>

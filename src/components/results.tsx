@@ -57,7 +57,10 @@ export function Results({ correctAnswers, questionsAmount }: ResultsProps) {
   };
 
   return (
-    <>
+    <div
+      className='animate-appear opacity-0'
+      style={{ animationFillMode: 'forwards', animationDelay: '0.5s' }}
+    >
       <div className='flex flex-col gap-6 px-5 md:items-center'>
         <h2 className='text-2xl md:text-4xl text-gray-100 font-extrabold'>
           {resultsTitlesDictionary[resultsMessage]}
@@ -111,6 +114,6 @@ export function Results({ correctAnswers, questionsAmount }: ResultsProps) {
           </button>
         </Link>
       </div>
-    </>
+    </div>
   );
 }
