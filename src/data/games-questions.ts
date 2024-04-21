@@ -57,7 +57,7 @@ export const gamesQuestions: Question[] = [
       },
       {
         id: randomUUID(),
-        title: 'Fortnite',
+        title: 'League of Legends',
         isCorrect: false,
       },
       {
@@ -73,7 +73,7 @@ export const gamesQuestions: Question[] = [
     options: [
       {
         id: randomUUID(),
-        title: 'World of Warcraft',
+        title: 'Undertale',
         isCorrect: false,
       },
       {
@@ -83,7 +83,7 @@ export const gamesQuestions: Question[] = [
       },
       {
         id: randomUUID(),
-        title: 'The Sims',
+        title: 'Grand Theft Auto IV',
         isCorrect: false,
       },
     ],
@@ -165,7 +165,7 @@ export const gamesQuestions: Question[] = [
       },
       {
         id: randomUUID(),
-        title: 'SimCity',
+        title: 'Terraria',
         isCorrect: false,
       },
       {
