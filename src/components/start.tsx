@@ -22,7 +22,7 @@ export function Start() {
         <span className='text-gray-300'>challenge</span> yourself!
       </p>
 
-      <Link to='/play'>
+      <Link to='/quiz-general'>
         <button className='group mt-6 py-1 px-3 flex items-center justify-center gap-1.5 rounded-md text-gray-300 border border-gray-300 bg-transparent hover:bg-gray-300 hover:text-background transition-all cursor-pointer'>
           Give a shot
           <ArrowRight
@@ -34,13 +34,13 @@ export function Start() {
 
       <div className='mt-8 flex flex-wrap gap-10 justify-center'>
         <HomeCard image={cardImg1}>
-          <h4 className='text-gray-100 font-bold md:text-lg'>Fast-paced</h4>
+          <h4 className='text-gray-100 font-bold md:text-lg'>General</h4>
 
           <p className='pr-8 text-sm md:text-base'>
             Instantly boost knowledge with fast and simple questions.
           </p>
 
-          <Link to='/play'>
+          <Link to='/quiz-general'>
             <button className='group flex items-center justify-center gap-1.5 text-gray-300 hover:underline'>
               Play{' '}
               <ArrowRight
@@ -52,13 +52,13 @@ export function Start() {
         </HomeCard>
 
         <HomeCard image={cardImg2}>
-          <h4 className='text-gray-100 font-bold md:text-lg'>Interactive</h4>
+          <h4 className='text-gray-100 font-bold md:text-lg'>Games</h4>
 
           <p className='text-sm md:text-base'>
-            Engage effectively through this hands-on and uncomplicated tests.
+            Engage effectively through the virtual gamer world.
           </p>
 
-          <Link to='/play'>
+          <Link to='/quiz-games'>
             <button className='group flex items-center justify-center gap-1.5 text-gray-300 hover:underline'>
               Play{' '}
               <ArrowRight
