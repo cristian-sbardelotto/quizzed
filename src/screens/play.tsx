@@ -4,9 +4,13 @@ import { RootLayout } from '../layouts/root';
 import { Results } from '../components/results';
 import { Quiz } from '../components/quiz';
 
-import { questions } from '../data/questions';
+import { Question } from '../types/quiz';
 
-export function Play() {
+type PlayProps = {
+  questions: Question[];
+};
+
+export function Play({ questions }: PlayProps) {
   const [questionIndex, setQuestionIndex] = useState(0);
   const [totalCorrectAnswers, setTotalCorrectAnswers] = useState(0);
 

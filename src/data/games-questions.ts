@@ -1,178 +1,176 @@
 import { v4 as randomUUID } from 'uuid';
 
-import { Option } from '../types/quiz';
+import { Question } from '../types/quiz';
 
-type Question = {
-  id: string;
-  title: string;
-  options: Option[];
-};
-
-export const questions: Question[] = [
+export const gamesQuestions: Question[] = [
   {
     id: randomUUID(),
-    title: 'What is the capital of France?',
+    title: 'Which game features a plumber named Mario?',
     options: [
       {
         id: randomUUID(),
-        title: 'Berlin',
+        title: 'Legend of Zelda',
         isCorrect: false,
       },
       {
         id: randomUUID(),
-        title: 'London',
-        isCorrect: false,
-      },
-      {
-        id: randomUUID(),
-        title: 'Paris',
-        isCorrect: true,
-      },
-    ],
-  },
-  {
-    id: randomUUID(),
-    title: 'Who painted the Mona Lisa?',
-    options: [
-      {
-        id: randomUUID(),
-        title: 'Leonardo da Vinci',
+        title: 'Super Mario Bros',
         isCorrect: true,
       },
       {
         id: randomUUID(),
-        title: 'Pablo Picasso',
-        isCorrect: false,
-      },
-      {
-        id: randomUUID(),
-        title: 'Vincent van Gogh',
+        title: 'Metroid',
         isCorrect: false,
       },
     ],
   },
   {
     id: randomUUID(),
-    title: 'What is the largest planet in the solar system?',
+    title:
+      'Who is the main antagonist in the game "The Legend of Zelda: Ocarina of Time"?',
     options: [
       {
         id: randomUUID(),
-        title: 'Earth',
-        isCorrect: false,
-      },
-      {
-        id: randomUUID(),
-        title: 'Jupiter',
+        title: 'Ganondorf',
         isCorrect: true,
       },
       {
         id: randomUUID(),
-        title: 'Saturn',
+        title: 'Bowser',
+        isCorrect: false,
+      },
+      {
+        id: randomUUID(),
+        title: 'Sephiroth',
         isCorrect: false,
       },
     ],
   },
   {
     id: randomUUID(),
-    title: 'What is the longest bone in the human body?',
+    title: 'Which game is known for its battle royale mode?',
     options: [
       {
         id: randomUUID(),
-        title: 'Femur',
+        title: 'Call of Duty',
         isCorrect: true,
       },
       {
         id: randomUUID(),
-        title: 'Tibia',
+        title: 'Fortnite',
         isCorrect: false,
       },
       {
         id: randomUUID(),
-        title: 'Humerus',
+        title: 'Minecraft',
         isCorrect: false,
       },
     ],
   },
   {
     id: randomUUID(),
-    title: "Who wrote 'Don Quixote'?",
+    title: 'In which game do players build and explore virtual worlds?',
     options: [
       {
         id: randomUUID(),
-        title: 'Friedrich Nietzsche',
+        title: 'World of Warcraft',
         isCorrect: false,
       },
       {
         id: randomUUID(),
-        title: 'William Shakespeare',
-        isCorrect: false,
-      },
-      {
-        id: randomUUID(),
-        title: 'Miguel de Cervantes',
-        isCorrect: true,
-      },
-    ],
-  },
-  {
-    id: randomUUID(),
-    title: 'What is the chemical symbol for gold?',
-    options: [
-      {
-        id: randomUUID(),
-        title: 'Ag',
-        isCorrect: false,
-      },
-      {
-        id: randomUUID(),
-        title: 'Au',
+        title: 'Minecraft',
         isCorrect: true,
       },
       {
         id: randomUUID(),
-        title: 'Fe',
+        title: 'The Sims',
         isCorrect: false,
       },
     ],
   },
   {
     id: randomUUID(),
-    title: 'Who was the first president of the United States?',
+    title:
+      'What is the name of the fictional city in the Grand Theft Auto series?',
     options: [
       {
         id: randomUUID(),
-        title: 'George Washington',
+        title: 'Liberty City',
         isCorrect: true,
       },
       {
         id: randomUUID(),
-        title: 'Thomas Jefferson',
+        title: 'Vice City',
         isCorrect: false,
       },
       {
         id: randomUUID(),
-        title: 'Abraham Lincoln',
+        title: 'Los Santos',
         isCorrect: false,
       },
     ],
   },
   {
     id: randomUUID(),
-    title: 'What is the largest ocean in the world?',
+    title: 'Which game franchise features a character named Master Chief?',
     options: [
       {
         id: randomUUID(),
-        title: 'Atlantic',
-        isCorrect: false,
-      },
-      {
-        id: randomUUID(),
-        title: 'Pacific',
+        title: 'Halo',
         isCorrect: true,
       },
       {
         id: randomUUID(),
-        title: 'Indian',
+        title: 'Gears of War',
+        isCorrect: false,
+      },
+      {
+        id: randomUUID(),
+        title: 'Mass Effect',
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    id: randomUUID(),
+    title:
+      'In which game do players control a group of survivors during a zombie apocalypse?',
+    options: [
+      {
+        id: randomUUID(),
+        title: 'Left 4 Dead',
+        isCorrect: true,
+      },
+      {
+        id: randomUUID(),
+        title: 'Resident Evil',
+        isCorrect: false,
+      },
+      {
+        id: randomUUID(),
+        title: 'Dead Rising',
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    id: randomUUID(),
+    title:
+      'Which game involves players building and managing their own virtual city?',
+    options: [
+      {
+        id: randomUUID(),
+        title: 'Cities: Skylines',
+        isCorrect: true,
+      },
+      {
+        id: randomUUID(),
+        title: 'SimCity',
+        isCorrect: false,
+      },
+      {
+        id: randomUUID(),
+        title: 'Civilization',
         isCorrect: false,
       },
     ],
