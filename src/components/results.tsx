@@ -58,7 +58,7 @@ export function Results({ correctAnswers, questionsAmount }: ResultsProps) {
 
   return (
     <div
-      className='animate-appear opacity-0'
+      className='animate-appear opacity-0 pointer-events-none'
       style={{ animationFillMode: 'forwards', animationDelay: '0.5s' }}
     >
       <div className='flex flex-col gap-6 px-5 md:items-center'>

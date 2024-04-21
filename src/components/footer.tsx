@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className='py-8 px-4 text-center animate-appear'>
+    <footer className='py-8 px-4 text-center animate-appear pointer-events-none'>
       <p>
         Made with determination by{' '}
         <a

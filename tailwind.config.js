@@ -5,8 +5,16 @@ export default {
     extend: {
       keyframes: {
         appear: {
-          '0%': { transform: 'translateY(-25px)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '1' },
+          '0%': {
+            transform: 'translateY(-25px)',
+            opacity: '0',
+            pointerEvents: 'none',
+          },
+          '100%': {
+            transform: 'translateY(0)',
+            opacity: '1',
+            pointerEvents: 'auto',
+          },
         },
       },
       animation: {

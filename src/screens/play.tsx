@@ -26,7 +26,7 @@ export function Play({ questions }: PlayProps) {
     <RootLayout>
       {isQuizRunning ? (
         <div
-          className='animate-appear opacity-0'
+          className='animate-appear opacity-0 pointer-events-none'
           style={{ animationFillMode: 'forwards', animationDelay: '0.5s' }}
         >
           <Quiz.Title currentQuestion={questionIndex + 1}>
