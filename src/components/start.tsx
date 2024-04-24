@@ -10,12 +10,12 @@ import { ArrowRight } from 'lucide-react';
 export function Start() {
   return (
     <div
-      className='pt-4 flex flex-col items-center gap-3 px-3 opacity-0 animate-appear pointer-events-none'
+      className='pt-4 flex flex-col items-start sm:items-center gap-3 px-5 sm:px-3 opacity-0 animate-appear pointer-events-none'
       style={{ animationFillMode: 'forwards', animationDelay: '0.5s' }}
     >
       <Title>Hello, quizzer! Are you ready?</Title>
 
-      <p className='text-center text-sm md:text-base'>
+      <p className='text-sm md:text-base'>
         Welcome to <span className='text-gray-100'>Quizzed</span>! Test your
         knowledge and try our quiz to{' '}
         <span className='text-gray-300'>challenge</span> yourself!
