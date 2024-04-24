@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 
 import { HomeCard } from './home-card';
 import { Title } from './title';
+import { Button } from './button';
 
 import cardImg1 from '/home-card-1.jpeg';
 import cardImg2 from '/home-card-2.jpeg';
@@ -22,13 +23,13 @@ export function Start() {
       </p>
 
       <Link to='/quiz-general'>
-        <button className='group mt-6 py-1 px-3 flex items-center justify-center gap-1.5 rounded-md text-gray-300 border border-gray-300 bg-transparent hover:bg-gray-300 hover:text-background transition-all cursor-pointer'>
+        <Button className='group'>
           Give a shot
           <ArrowRight
             size={16}
             className='group-hover:translate-x-1 transition-all'
           />
-        </button>
+        </Button>
       </Link>
 
       <div className='mt-8 flex flex-wrap gap-10 justify-center'>

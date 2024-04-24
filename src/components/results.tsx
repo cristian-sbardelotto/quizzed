@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 
 import { Card } from './card';
 import { Title } from './title';
+import { Button } from './button';
 import { ResultsProps } from '../types/results';
 import { calculatePrecision, getPrecisionCategory } from '../utils/results';
 
@@ -97,21 +98,32 @@ export function Results({ correctAnswers, questionsAmount }: ResultsProps) {
         <a
           href='https://linkedin.com/in/cristian-k-sbardelotto/'
           target='_blank'
-          className='py-2 px-5 border-2 bg-transparent border-gray-600 rounded-3xl hover:border-white transition-colors'
         >
-          <button className='w-full flex items-center justify-center gap-1.5 md:text-lg text-white'>
+          <Button
+            variant='simple'
+            className='py-2 px-5 md:text-lg'
+          >
             <CodeXmlIcon size={18} /> Meet the developer
-          </button>
+          </Button>
         </a>
 
-        <Link
-          className='py-2 px-5 border-2 bg-transparent border-gray-600 rounded-3xl hover:border-white transition-colors'
-          to='/'
-        >
-          <button className='w-full flex items-center justify-center gap-1.5 md:text-lg text-white'>
+        <Link to='/'>
+          <Button
+            variant='simple'
+            className='py-2 px-5 md:text-lg'
+          >
             <HomeIcon size={18} /> Go back to home
-          </button>
+          </Button>
         </Link>
+
+        {/* <Link to='/'>
+          <Button
+            variant='simple'
+            className='py-2 px-5 md:text-lg'
+          >
+            <HomeIcon size={18} /> Go back to home
+          </Button>
+        </Link> */}
       </div>
     </div>
   );
