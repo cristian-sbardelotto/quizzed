@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 
 import { HomeCard } from './home-card';
+import { Title } from './title';
+import { Button } from './button';
 
 import cardImg1 from '/home-card-1.jpeg';
 import cardImg2 from '/home-card-2.jpeg';
@@ -9,27 +11,25 @@ import { ArrowRight } from 'lucide-react';
 export function Start() {
   return (
     <div
-      className='pt-4 flex flex-col items-center gap-3 px-3 opacity-0 animate-appear pointer-events-none'
+      className='pt-4 flex flex-col items-start sm:items-center gap-3 px-5 sm:px-3 opacity-0 animate-appear pointer-events-none'
       style={{ animationFillMode: 'forwards', animationDelay: '0.5s' }}
     >
-      <h2 className='text-center text-3xl md:text-4xl text-gray-100 font-extrabold'>
-        Hello, quizzer! Are you ready?
-      </h2>
+      <Title>Hello, quizzer! Are you ready?</Title>
 
-      <p className='text-center text-sm md:text-base'>
+      <p className='text-sm md:text-base'>
         Welcome to <span className='text-gray-100'>Quizzed</span>! Test your
         knowledge and try our quiz to{' '}
         <span className='text-gray-300'>challenge</span> yourself!
       </p>
 
       <Link to='/quiz-general'>
-        <button className='group mt-6 py-1 px-3 flex items-center justify-center gap-1.5 rounded-md text-gray-300 border border-gray-300 bg-transparent hover:bg-gray-300 hover:text-background transition-all cursor-pointer'>
+        <Button className='group'>
           Give a shot
           <ArrowRight
             size={16}
             className='group-hover:translate-x-1 transition-all'
           />
-        </button>
+        </Button>
       </Link>
 
       <div className='mt-8 flex flex-wrap gap-10 justify-center'>
