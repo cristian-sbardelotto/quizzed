@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import { Card } from './card';
+import { Title } from './title';
 import { ResultsProps } from '../types/results';
 import { calculatePrecision, getPrecisionCategory } from '../utils/results';
 
@@ -62,9 +63,7 @@ export function Results({ correctAnswers, questionsAmount }: ResultsProps) {
       style={{ animationFillMode: 'forwards', animationDelay: '0.5s' }}
     >
       <div className='flex flex-col gap-6 px-5 md:items-center'>
-        <h2 className='text-2xl md:text-4xl text-gray-100 font-extrabold'>
-          {resultsTitlesDictionary[resultsMessage]}
-        </h2>
+        <Title>{resultsTitlesDictionary[resultsMessage]}</Title>
 
         <p>{resultsMessagesDictionary[resultsMessage]}</p>
       </div>

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import { HomeCard } from './home-card';
+import { Title } from './title';
 
 import cardImg1 from '/home-card-1.jpeg';
 import cardImg2 from '/home-card-2.jpeg';
@@ -12,9 +13,7 @@ export function Start() {
       className='pt-4 flex flex-col items-center gap-3 px-3 opacity-0 animate-appear pointer-events-none'
       style={{ animationFillMode: 'forwards', animationDelay: '0.5s' }}
     >
-      <h2 className='text-center text-3xl md:text-4xl text-gray-100 font-extrabold'>
-        Hello, quizzer! Are you ready?
-      </h2>
+      <Title>Hello, quizzer! Are you ready?</Title>
 
       <p className='text-center text-sm md:text-base'>
         Welcome to <span className='text-gray-100'>Quizzed</span>! Test your
