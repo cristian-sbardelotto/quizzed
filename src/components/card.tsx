@@ -2,11 +2,13 @@ import { ReactNode } from 'react';
 
 import { twMerge } from 'tailwind-merge';
 
+type Variant = 'default' | 'correct' | 'wrong';
+
 type CardProps = {
   icon: string;
   children: ReactNode;
   description: string;
-  variant?: 'default' | 'correct' | 'wrong';
+  variant?: Variant;
 };
 
 export function Card({
@@ -15,25 +17,17 @@ export function Card({
   icon,
   variant = 'default',
 }: CardProps) {
-  let variantClasses = '';
-
-  switch (variant) {
-    case 'correct':
-      variantClasses =
-        'border-emerald-500 shadow-correct-option bg-emerald-500/5';
-      break;
-    case 'wrong':
-      variantClasses = 'border-red-600 shadow-wrong-option bg-red-600/5';
-      break;
-    default:
-      variantClasses = 'border-gray-600 shadow-option';
-  }
+  const variantClassesDictionary: Record<Variant, string> = {
+    default: 'border-gray-600 shadow-option',
+    correct: 'border-emerald-500 shadow-correct-option bg-emerald-500/5',
+    wrong: 'border-red-600 shadow-wrong-option bg-red-600/5',
+  };
 
   return (
     <div
       className={twMerge(
         'flex flex-col items-center py-5 px-6 gap-3 rounded-2xl max-w-52 md:w-fit break-all border-2 text-gray-100',
-        variantClasses
+        variantClassesDictionary[variant]
       )}
     >
       <span className='text-xl md:text-2xl'>{icon}</span>
