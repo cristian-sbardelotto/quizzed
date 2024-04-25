@@ -115,15 +115,6 @@ export function Results({ correctAnswers, questionsAmount }: ResultsProps) {
             <HomeIcon size={18} /> Go back to home
           </Button>
         </Link>
-
-        {/* <Link to='/'>
-          <Button
-            variant='simple'
-            className='py-2 px-5 md:text-lg'
-          >
-            <HomeIcon size={18} /> Go back to home
-          </Button>
-        </Link> */}
       </div>
     </div>
   );
