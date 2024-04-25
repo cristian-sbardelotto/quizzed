@@ -36,7 +36,7 @@ export function Start() {
         <HomeCard image={cardImg1}>
           <h4 className='text-gray-100 font-bold md:text-lg'>General</h4>
 
-          <p className='pr-8 text-sm md:text-base'>
+          <p className='text-sm md:text-base'>
             Instantly boost knowledge with fast and simple questions.
           </p>
 
