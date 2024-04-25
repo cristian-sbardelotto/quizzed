@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import { Card } from './card';
+import { ResultBadge } from './result-badge';
 import { Title } from './title';
 import { Button } from './button';
 import { ResultsProps } from '../types/results';
@@ -70,28 +70,28 @@ export function Results({ correctAnswers, questionsAmount }: ResultsProps) {
       </div>
 
       <section className='flex flex-row flex-wrap justify-center gap-4 px-4 md:gap-16 mt-10'>
-        <Card
+        <ResultBadge
           description='Total questions'
           icon='⚡'
         >
           {questionsAmount}
-        </Card>
+        </ResultBadge>
 
-        <Card
+        <ResultBadge
           description='Correct answers'
           icon='🎯'
           variant='correct'
         >
           {correctAnswers}
-        </Card>
+        </ResultBadge>
 
-        <Card
+        <ResultBadge
           description='Wrong answers'
           icon='❌'
           variant='wrong'
         >
           {wrongAnswers}
-        </Card>
+        </ResultBadge>
       </section>
 
       <div className='mt-16 flex flex-col gap-4 max-w-80 px-5 mx-auto'>
@@ -115,15 +115,6 @@ export function Results({ correctAnswers, questionsAmount }: ResultsProps) {
             <HomeIcon size={18} /> Go back to home
           </Button>
         </Link>
-
-        {/* <Link to='/'>
-          <Button
-            variant='simple'
-            className='py-2 px-5 md:text-lg'
-          >
-            <HomeIcon size={18} /> Go back to home
-          </Button>
-        </Link> */}
       </div>
     </div>
   );
