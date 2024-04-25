@@ -9,7 +9,7 @@ type QuizTitleProps = {
 
 export function QuizTitle({ children, currentQuestion }: QuizTitleProps) {
   return (
-    <Title className='px-4 max-w-[120ch] mt-4 text-center text-2xl md:text-2xl md:px-0'>
+    <Title className='px-4 max-w-[120ch] mt-4 text-center text-2xl md:text-2xl'>
       {currentQuestion}. {children}
     </Title>
   );

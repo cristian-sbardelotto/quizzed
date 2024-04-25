@@ -1,12 +1,13 @@
 import { v4 as randomUUID } from 'uuid';
 
+import { shuffleList } from '../utils/options';
 import { Question } from '../types/quiz';
 
 export const generalQuestions: Question[] = [
   {
     id: randomUUID(),
     title: 'What is the capital of France?',
-    options: [
+    options: shuffleList([
       {
         id: randomUUID(),
         title: 'Berlin',
@@ -22,12 +23,12 @@ export const generalQuestions: Question[] = [
         title: 'Paris',
         isCorrect: true,
       },
-    ],
+    ]),
   },
   {
     id: randomUUID(),
     title: 'Who painted the Mona Lisa?',
-    options: [
+    options: shuffleList([
       {
         id: randomUUID(),
         title: 'Leonardo da Vinci',
@@ -43,12 +44,12 @@ export const generalQuestions: Question[] = [
         title: 'Vincent van Gogh',
         isCorrect: false,
       },
-    ],
+    ]),
   },
   {
     id: randomUUID(),
     title: 'What is the largest planet in the solar system?',
-    options: [
+    options: shuffleList([
       {
         id: randomUUID(),
         title: 'Earth',
@@ -64,12 +65,12 @@ export const generalQuestions: Question[] = [
         title: 'Saturn',
         isCorrect: false,
       },
-    ],
+    ]),
   },
   {
     id: randomUUID(),
     title: 'What is the longest bone in the human body?',
-    options: [
+    options: shuffleList([
       {
         id: randomUUID(),
         title: 'Femur',
@@ -85,12 +86,12 @@ export const generalQuestions: Question[] = [
         title: 'Humerus',
         isCorrect: false,
       },
-    ],
+    ]),
   },
   {
     id: randomUUID(),
     title: "Who wrote 'Don Quixote'?",
-    options: [
+    options: shuffleList([
       {
         id: randomUUID(),
         title: 'Friedrich Nietzsche',
@@ -106,12 +107,12 @@ export const generalQuestions: Question[] = [
         title: 'Miguel de Cervantes',
         isCorrect: true,
       },
-    ],
+    ]),
   },
   {
     id: randomUUID(),
     title: 'What is the chemical symbol for gold?',
-    options: [
+    options: shuffleList([
       {
         id: randomUUID(),
         title: 'Ag',
@@ -127,12 +128,12 @@ export const generalQuestions: Question[] = [
         title: 'Fe',
         isCorrect: false,
       },
-    ],
+    ]),
   },
   {
     id: randomUUID(),
     title: 'Who was the first president of the United States?',
-    options: [
+    options: shuffleList([
       {
         id: randomUUID(),
         title: 'George Washington',
@@ -148,12 +149,12 @@ export const generalQuestions: Question[] = [
         title: 'Abraham Lincoln',
         isCorrect: false,
       },
-    ],
+    ]),
   },
   {
     id: randomUUID(),
     title: 'What is the largest ocean in the world?',
-    options: [
+    options: shuffleList([
       {
         id: randomUUID(),
         title: 'Atlantic',
@@ -169,6 +170,6 @@ export const generalQuestions: Question[] = [
         title: 'Indian',
         isCorrect: false,
       },
-    ],
+    ]),
   },
 ];
