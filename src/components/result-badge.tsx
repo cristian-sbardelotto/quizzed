@@ -4,19 +4,19 @@ import { twMerge } from 'tailwind-merge';
 
 type Variant = 'default' | 'correct' | 'wrong';
 
-type CardProps = {
+type ResultBadgeProps = {
   icon: string;
   children: ReactNode;
   description: string;
   variant?: Variant;
 };
 
-export function Card({
+export function ResultBadge({
   children,
   description,
   icon,
   variant = 'default',
-}: CardProps) {
+}: ResultBadgeProps) {
   const variantClassesDictionary: Record<Variant, string> = {
     default: 'border-gray-600 shadow-option',
     correct: 'border-emerald-500 shadow-correct-option bg-emerald-500/5',
